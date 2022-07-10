@@ -1,0 +1,332 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+% The minted Package is for programming language typesetting
+\usepackage{minted}
+% The csquotes Package is to apply quotes to the document
+\usepackage{csquotes}
+% The tgbonum Package is for different font types
+\usepackage{tgbonum}
+
+%opening
+\title{Python Essentials - Module 1}
+\author{Cisco Networking Academy}
+
+\begin{document}
+\maketitle{}
+\begin{abstract}
+In this module you'll learn:
+\begin{itemize}
+ \item how to write and run simple Python programs;
+ \item what Python literals, operators, and expressions are;
+ \item what variables are and what are the rules that govern them;
+ \item how to perform basic input and output operations.
+\end{itemize}
+\end{abstract}
+\section{Hello, World!}
+It's time to start writing some real, working Python code. It'll be very simple for the time being.
+\newline
+
+As we're going to show you some fundamental concepts and terms, these snippets of code won't be serious or complex.
+\newline
+
+Run the code in the editor window on the right. If everything goes okay here, you'll see the line of text in the console window.
+\newline
+
+Alternatively, launch IDLE, create a new Python source file, fill it with this code, name the file and save it. Now run it. If everything goes okay, you'll see the rhyme's line in the IDLE console window. The code you have run should look familiar. You saw something very similar when we led you through the setting up of the IDLE environment.
+\newline
+
+Now we'll spend some time showing and explaining to you what you're actually seeing, and why it looks like this.
+\newline
+
+As you can see, the first program consists of the following parts:
+\begin{itemize}
+ \item the word
+ \begin{minted}{python}
+ print
+ \end{minted}
+ \item an opening parenthesis;
+ \item a quotation mark;
+ \item a line of text:
+  \begin{minted}{python}
+   Hello, World!
+  \end{minted}
+ \item another quotation mark;
+ \item a closing parenthesis.
+\end{itemize}
+
+Each of the above plays a very important role in the code.
+
+\begin{minted}{python}
+print("Hello, World")
+\end{minted}
+
+\section{The print() Function}
+Look at the line of code below:
+\begin{minted}{python}
+print("Hello, World")
+\end{minted}
+The word \textbf{print} that you can see here is a \textbf{function name}. That doesn't mean that wherever the word appears it is always a function name. The meaning of the word comes from the context in which the word has been used.
+\newline
+
+You've probably encountered the term function many times before, during math classes. You can probably also list several names of mathematical functions, like sine or log.
+\newline
+
+Python functions, however, are more flexible, and can contain more content than their mathematical siblings.
+\newline
+
+A function (in this context) is a separate part of the computer code able to:
+\begin{itemize}
+ \item \textbf{cause some effect} (e.g., send text to the terminal, create a file, draw an image, play a sound, etc.); this is something completely unheard of in the world of mathematics;
+ \item \textbf{evaluate a value} (e.g., the square root of a value or the length of a given text) and \textbf{return it as the function's result}; this is what makes Python functions the relatives of mathematical concepts.
+\end{itemize}
+
+Moreover, many of Python functions can do the above two things together.
+\newline
+
+Where do the functions come from?
+\begin{itemize}
+ \item They may come from Python itself; the print function is one of this kind; such a function is an added value received together with Python and its environment (it is built-in); you don't have to do anything special (e.g., ask anyone for anything) if you want to make use of it;
+ \item they may come from one or more of Python's add-ons named modules; some of the modules come with Python, others may require separate installation - whatever the case, they all need to be explicitly connected with your code (we'll show you how to do that soon);
+ \item you can write them yourself, placing as many functions as you want and need inside your program to make it simpler, clearer and more elegant.
+\end{itemize}
+
+The name of the function should be significant (the name of the print function is self-evident).
+\newline
+
+Of course, if you're going to make use of any already existing function, you have no influence on its name, but when you start writing your own functions, you should consider carefully your choice of names.
+\newline
+
+As we said before, a function may have:
+\begin{itemize}
+ \item an \textbf{effect};
+ \item a \textbf{result}.
+\end{itemize}
+
+There's also a third, very important, function component - \textbf{the argument(s)}.
+\newline
+
+Mathematical functions usually take one argument, e.g., sin(x) takes an x, which is the measure of an angle.
+\newline
+
+Python functions, on the other hand, are more versatile. Depending on the individual needs, they may accept any number of arguments - as many as necessary to perform their tasks. Note: any number includes zero - some Python functions don't need any argument.
+\newline
+
+In spite of the number of needed/provided arguments, Python functions strongly demand the presence of a pair of parentheses - opening and closing ones, respectively.
+\newline
+
+If you want to deliver one or more arguments to a function, you place them inside the parentheses. If you're going to use a function which doesn't take any argument, you still have to have the parentheses.
+\newline
+
+Note: to distinguish ordinary words from function names, place a pair of empty parentheses after their names, even if the corresponding function wants one or more arguments. This is a standard convention.
+\newline
+
+The function we're talking about here is {\fontfamily{cmtt}\selectfont print() }.
+\newline
+
+Does the {\fontfamily{cmtt}\selectfont print() }function in our example have any arguments?
+\newline
+
+Of course it does, but what are they?
+\newline
+
+The only argument delivered to the {\fontfamily{cmtt}\selectfont print()} function in this example is a string:
+\begin{minted}{python}
+ print("Hello, World!")
+\end{minted}
+
+As you can see, the \textbf{string is delimited with quotes} - in fact, the quotes make the string - they cut out a part of the code and assign a different meaning to it.
+\newline
+
+You can imagine that the quotes say something like: the text between us is not code. It isn't intended to be executed, and you should take it as is.
+\newline
+
+Almost anything you put inside the quotes will be taken literally, not as code, but as data. Try to play with this particular string - modify it, enter some new content, delete some of the existing content.
+\newline
+
+There's more than one way to specify a string inside Python's code, but for now, though, this one is enough.
+\newline
+
+So far, you have learned about two important parts of the code: \textbf{the function} and \textbf{the string}. We've talked about them in terms of syntax, but now it's time to discuss them in terms of semantics.
+\newline
+
+The function name (print in this case) along with the parentheses and argument(s), forms the function invocation.
+\newline
+
+We'll discuss this in more depth soon, but we should just shed a little light on it right now.
+\begin{minted}{python}
+ print("Hello, World!")
+\end{minted}
+
+What happens when Python encounters an invocation like this one below?
+\newline
+
+{\fontfamily{cmtt}\selectfont function\underline{\hspace{.10in}}name(argument)}
+\newline
+
+Let's see:
+\begin{enumerate}
+ \item Python checks if the name specified is legal (it browses its internal data in order to find an existing function of the name; if this search fails, Python aborts the code);
+ \item Python checks if the function's requirements for the number of arguments allows you to invoke the function in this way (e.g., if a specific function demands exactly two arguments, any invocation delivering only one argument will be considered erroneous, and will abort the code's execution);
+ \item Python leaves your code for a moment and jumps into the function you want to invoke; of course, it takes your argument(s) too and passes it/them to the function;
+ \item The function executes its code, causes the desired effect (if any), evaluates the desired result(s) (if any) and finishes its task;
+ \item Python returns to your code (to the place just after the invocation) and resumes its execution.
+\end{enumerate}
+
+Three important questions have to be answered as soon as possible:
+\newline
+
+\textbf{1. What is the effect the {\fontfamily{cmtt}\selectfont print()} function causes?}
+\newline
+
+The effect is very useful and very spectacular. The function:
+\begin{itemize}
+ \item takes its arguments (it may accept more than one argument and may also accept less than one argument)
+ \item converts them into human-readable form if needed (as you may suspect, strings don't require this action, as the string is already readable)
+ \item and sends the resulting data to the output device (usually the console); in other words, anything you put into the print() function will appear on your screen.
+\end{itemize}
+
+No wonder then, that from now on, you'll utilize {\fontfamily{cmtt}\selectfont print()} very intensively to see the results of your operations and evaluations.
+\newline
+
+\textbf{2. What arguments does {\fontfamily{cmtt}\selectfont print()} expect?}
+\newline
+
+Any. We'll show you soon that {\fontfamily{cmtt}\selectfont print()} is able to operate with virtually all types of data offered by Python. Strings, numbers, characters, logical values, objects - any of these may be successfully passed to {\fontfamily{cmtt}\selectfont print()}.
+\newline
+
+\textbf{3. What value does {\fontfamily{cmtt}\selectfont print()} function return?}
+\newline
+
+None. Its effect is enough.
+
+\subsection{The print() function - instructions}
+You have already seen a computer program that contains one function invocation. A function invocation is one of many possible kinds of Python instructions.
+\newline
+
+Of course, any complex program usually contains many more instructions than one. The question is: how do you couple more than one instruction into the Python code?
+\newline
+
+Python's syntax is quite specific in this area. Unlike most programming languages, \textbf{Python requires that there cannot be more than one instruction in a line}.
+\newline
+
+A line can be empty (i.e., it may contain no instruction at all) but it must not contain two, three or more instructions. This is strictly prohibited.
+\newline
+
+\textbf{Note}: Python makes one exception to this rule - it allows one instruction to spread across more than one line (which may be helpful when your code contains complex constructions).
+\newline
+
+Let's expand the code a bit, you can see it in the editor. Run it and note what you see in the console.
+\newline
+
+Your Python console should now look like this:
+\newline
+
+{\fontfamily{cmtt}\selectfont The itsy bitsy spider climbed up the waterspout.
+
+Down came the rain and washed the spider out.}
+\newline
+
+This is a good opportunity to make some observations:
+\begin{itemize}
+ \item the program invokes the {\fontfamily{cmtt}\selectfont print()} \textbf{function twice}, and you can see two separate lines in the console - this means that {\fontfamily{cmtt}\selectfont print()} begins its output from a new line each time it starts its execution; you can change this behavior, but you can also use it to your advantage;
+ \item each {\fontfamily{cmtt}\selectfont print()} invocation contains a different string, as its argument and the console content reflects it - this means \textbf{that the instructions in the code are executed in the same order} in which they have been placed in the source file; no next instruction is executed until the previous one is completed (there are some exceptions to this rule, but you can ignore them for now)
+\end{itemize}
+
+
+We've changed the example a bit - we've added one \textbf{empty} {\fontfamily{cmtt}\selectfont print()} function invocation. We call it empty because we haven't delivered any arguments to the function.
+\newline
+
+You can see it in the editor window. Run the code.
+\newline
+
+What happens?
+\newline
+
+If everything goes right, you should see something like this:
+\newline
+
+{\fontfamily{cmtt}\selectfont The itsy bitsy spider climbed up the waterspout.
+\newline
+
+Down came the rain and washed the spider out.}
+\newline
+
+As you can see, the empty {\fontfamily{cmtt}\selectfont print()} invocation is not as empty as you may have expected - it does output an empty line, or (this interpretation is also correct) its output is just a newline.
+\newline
+
+This is not the only way to produce a \textbf{newline} in the output console. We're now going to show you another way.
+
+\subsection{The print() function - the escape and newline characters}
+We've modified the code again. Look at it carefully.
+\begin{minted}{python}
+ print("The itsy bitsy spider\nclimbed up the waterspout.")
+ print()
+ print("Down came the rain\nand washed the spider out.")
+\end{minted}
+
+There are two very subtle changes - we've inserted a strange pair of characters inside the rhyme. They look like this: {\fontfamily{cmtt}\selectfont \textbackslash n}.
+\newline
+
+Interestingly, while \textbf{you can see two characters, Python sees one.}
+\newline
+
+The backslash ({\fontfamily{cmtt}\selectfont \textbackslash }) has a very special meaning when used inside strings - this is called \textbf{the escape character}.
+\newline
+
+The word escape should be understood specifically - it means that the series of characters in the string escapes for the moment (a very short moment) to introduce a special inclusion.
+\newline
+
+In other words, the backslash doesn't mean anything in itself, but is only a kind of announcement, that the next character after the backslash has a different meaning too.
+\newline
+
+The letter {\fontfamily{cmtt}\selectfont n} placed after the backshlash comes from the work \textit{newline}.
+\newline
+
+Both the backslash and the {\fontfamily{cmtt}\selectfont n} form a special symbol named \textbf{a newline character}, which urges the console to start a \textbf{new output line}.
+\newline
+
+Run the code. Your console should now look like this:
+\newline
+
+{\fontfamily{cmtt}\selectfont The itsy bitsy spider
+
+climbed up the waterspout.
+\newline
+
+Down came the rain
+
+and washed the spider out.}
+
+
+As you can see, two newlines appear in the nursery rhyme, in the places where the {\fontfamily{cmtt}\selectfont \textbackslash n} have been used.
+\newline
+
+This convention has two important consequences:
+\newline
+
+1. If you want to put just one backslash inside a string, don't forget its escaping nature - you have to double it, e.g., such an invocation will cause an error:
+\newline
+
+{\fontfamily{cmtt}\selectfont print("\textbackslash")}
+\newline
+
+while this one won't:
+\newline
+
+{\fontfamily{cmtt}\selectfont print("\textbackslash\textbackslash")}
+\newline
+
+
+Not all escape pairs (the backslash coupled with another character) mean something.
+\newline
+
+Experiment with your code in the editor, run it, and see what happens.
+\newline
+
+\subsection{The print() function - using multiple arguments}
+
+
+
+
+
+\end{document}
