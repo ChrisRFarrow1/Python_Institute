@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+ \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Programming\PYGZdq{}}\PYG{p}{,}\PYG{l+s+s2}{\PYGZdq{}Essentials\PYGZdq{}}\PYG{p}{,}\PYG{l+s+s2}{\PYGZdq{}in\PYGZdq{}}\PYG{p}{)}
+ \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Python\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

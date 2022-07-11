@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+ \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}My name is\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Python.\PYGZdq{}}\PYG{p}{)}
+ \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Monty Python.\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

@@ -7,12 +7,17 @@
 % The tgbonum Package is for different font types
 \usepackage{tgbonum}
 
-%opening
-\title{Python Essentials - Module 1}
+%Opening Section
+\title{Python Essentials - Module 2}
 \author{Cisco Networking Academy}
+%\date{}
 
 \begin{document}
 \maketitle{}
+\tableofcontents
+\addcontentsline{toc}{section}{Abstract}
+
+%Abstract Section for Module 2
 \begin{abstract}
 In this module you'll learn:
 \begin{itemize}
@@ -22,7 +27,10 @@ In this module you'll learn:
  \item how to perform basic input and output operations.
 \end{itemize}
 \end{abstract}
-\section{Hello, World!}
+
+%Module 2, Section 1 - Your Very First Program
+\section{Your Very First Program}
+\subsection{Hello, World!}
 It's time to start writing some real, working Python code. It'll be very simple for the time being.
 \newline
 
@@ -60,7 +68,7 @@ Each of the above plays a very important role in the code.
 print("Hello, World")
 \end{minted}
 
-\section{The print() Function}
+\subsection{The print() Function}
 Look at the line of code below:
 \begin{minted}{python}
 print("Hello, World")
@@ -199,7 +207,7 @@ Any. We'll show you soon that {\fontfamily{cmtt}\selectfont print()} is able to 
 
 None. Its effect is enough.
 
-\subsection{The print() function - instructions}
+\subsubsection{The print() function - instructions}
 You have already seen a computer program that contains one function invocation. A function invocation is one of many possible kinds of Python instructions.
 \newline
 
@@ -256,7 +264,7 @@ As you can see, the empty {\fontfamily{cmtt}\selectfont print()} invocation is n
 
 This is not the only way to produce a \textbf{newline} in the output console. We're now going to show you another way.
 
-\subsection{The print() function - the escape and newline characters}
+\subsubsection{The print() function - the escape and newline characters}
 We've modified the code again. Look at it carefully.
 \begin{minted}{python}
  print("The itsy bitsy spider\nclimbed up the waterspout.")
@@ -323,7 +331,329 @@ Not all escape pairs (the backslash coupled with another character) mean somethi
 Experiment with your code in the editor, run it, and see what happens.
 \newline
 
-\subsection{The print() function - using multiple arguments}
+\subsubsection{The print() function - using multiple arguments}
+So far we have tested the {\fontfamily{cmtt}\selectfont print()} function behavior with no arguments, and with one argument. It's also worth trying to feed the {\fontfamily{cmtt}\selectfont print()} function with more than one argument.
+\newline
+
+This is what we're going to test now:
+\begin{minted}{python}
+ print("The itsy bitsy spider","climbed up","the water spout.")
+\end{minted}
+
+
+There is one {\fontfamily{cmtt}\selectfont print()} function invocation, but it contains \textbf{three arguments}. All of them are strings.
+\newline
+
+The arguments are \textbf{separated by commas}. We've surrounded them with spaces to make them more visible, but it's not really necessary, and we won't be doing it anymore.
+\newline
+
+In this case, the commas separating the arguments play a completely different role than the comma inside the string. The former is a part of Python's syntax, the latter is intended to be shown in the console.
+\newline
+
+If you look at the code again, you'll see that there are no spaces inside the strings.
+\newline
+
+Run the code and see what happens.
+\newline
+
+The console should now be showing the following text:
+
+
+{\fontfamily{cmtt}\selectfont The itsy bitsy spider climbed up the waterspout.}
+\newline
+
+The spaces, removed from the strings, have appeared again. Can you explain why?
+\newline
+
+Two conclusions emerge from this example:
+\begin{itemize}
+ \item a {\fontfamily{cmtt}\selectfont print()} function invoked with more than one argument \textbf{outputs them all on one line};
+ \item the {\fontfamily{cmtt}\selectfont print()} function \textbf{puts a space between the outputted arguments} on its own initiative.
+\end{itemize}
+
+\subsubsection{The print() function - the positional way of passing the arguments}
+Now that you know a bit about {\fontfamily{cmtt}\selectfont print()} function customs, we're going to show you how to change them.
+\newline
+
+You should be able to predict the output without running the code in the editor.
+\begin{minted}{python}
+ print("My name is", "Python.")
+ print("Monty Python.")
+\end{minted}
+
+
+
+
+Output will be:
+\newline
+
+
+{\fontfamily{cmtt}\selectfont My name is Python.
+
+
+Monty Python.}
+\newline
+
+
+
+The way in which we are passing the arguments into the {\fontfamily{cmtt}\selectfont print()} function is the most common in Python, and is called \textbf{the positional way} (this name comes from the fact that the meaning of the argument is dictated by its position, e.g., the second argument will be outputted after the first, not the other way round).
+\newline
+
+\subsection{The print() function - the keyword arguments}
+Python offers another mechanism for the passing of arguments, which can be helpful when you want to convince the {\fontfamily{cmtt}\selectfont print()} function to change its behavior a bit.
+\newline
+
+We aren't going to explain it in depth right now. We plan to do this when we talk about functions. For now, we simply want to show you how it works. Feel free to use it in your own programs.
+\newline
+
+The mechanism is called keyword arguments. The name stems from the fact that the meaning of these arguments is taken not from its location (position) but from the special word (keyword) used to identify them.
+\newline
+
+The {\fontfamily{cmtt}\selectfont print()} function has two keyword arguments that you can use for your purposes. The first of them is named {\fontfamily{cmtt}\selectfont end}.
+\newline
+
+You can see a very simple example of using a keyword argument:
+\newline
+
+\begin{minted}{python}
+ print("My name is", "Python.", end=" ")
+ print("Monty Python.")
+\end{minted}
+
+
+
+In order to use it, it is necessary to know some rules:
+\begin{itemize}
+ \item a keyword argument consists of three elements: a \textbf{keyword} identifying the argument ({\fontfamily{cmtt}\selectfont end} here); an \textbf{equal sign} ({\fontfamily{cmtt}\selectfont =}); and a \textbf{value} assigned to that argument;
+ \item any keyword arguments have to be put \textbf{after the last positional argument} (this is very important)
+\end{itemize}
+
+In our example, we have made use of the {\fontfamily{cmtt}\selectfont end} keyword rgument, and set it to a string containing one space.
+\newline
+
+Run the code to see how it works.
+\newline
+
+The console should now be showing the following text:
+\newline
+
+{\fontfamily{cmtt}\selectfont My name is Python. Monty Python.}
+\newline
+
+As you can see, the {\fontfamily{cmtt}\selectfont end} keyword argument determines the characters the {\fontfamily{cmtt}\selectfont print()} function sends to the output once it reaches the end of its positional arguments.
+\newline
+
+The default behavior reflects the situation where the {\fontfamily{cmtt}\selectfont end} keyword argument is \textbf{implicitly} used in the following way: {\fontfamily{cmtt}\selectfont end="\textbackslash n"}. What this states is that instead of the default behavior of the end of that {\fontfamily{cmtt}\selectfont print()} function call - which is to hit the 'return' and move to the next line - it is replaced with simply a space (the space within the two double quotes). This is why {\fontfamily{cmtt}\selectfont Monty Python} is on the same line as {\fontfamily{cmtt}\selectfont My name is Python}, not the next line.
+\newline
+
+And now it's time to try something more difficult.
+
+
+\begin{minted}{python}
+ print("My name is ", end="")
+ print("Monty Python.")
+\end{minted}
+
+
+If you look carefully, you'll see that we've used the {\fontfamily{cmtt}\selectfont end} argument, but the string assigned to it is empty (it contains no characters at all).
+\newline
+
+What will happen now? Run the program in the editor to find out.
+\newline
+
+As the {\fontfamily{cmtt}\selectfont end} argument has been set to nothing, the {\fontfamily{cmtt}\selectfont print()} function outputs nothing too, once its positional arguments have been exhausted.
+\newline
+
+The console should now be showing the following text:
+\newline
+
+{\fontfamily{cmtt}\selectfont My name is Monty Python.}
+\newline
+
+Note: \textbf{no newlines have been sent to the output.}
+\newline
+
+The string assigned to the end keyword argument can be of any length. Experiment with it if you want.
+\newline
+
+
+
+We've said previously that the {\fontfamily{cmtt}\selectfont print()} function separates its outputted arguments with spaces. This behavior can be changed, too.
+\newline
+
+The \textbf{keyword argument} that can do this is named {\fontfamily{cmtt}\selectfont sep} (like \textit{separator}). Here is the code:
+
+\begin{minted}{python}
+ print("My", "name", "is", "Monty", "Python.", sep="-")
+\end{minted}
+
+
+
+The {\fontfamily{cmtt}\selectfont sep} argument delivers the following results:
+\newline
+
+{\fontfamily{cmtt}\selectfont My-name-is-Monty-Python.}
+\newline
+
+What we gather is the default separator for the {\fontfamily{cmtt}\selectfont print()} function is a space, but in this instance the keyword argument {\fontfamily{cmtt}\selectfont sep} was used to print a '-' as the separator.
+\newline
+
+The {\fontfamily{cmtt}\selectfont print()} function now uses a dash, instead of a space, to separate the outputted arguments.
+\newline
+
+Note: the {\fontfamily{cmtt}\selectfont sep} argument's value may be an empty string, too. Try it for yourself.
+
+\begin{minted}{python}
+ print("My", "name", "is", "Monty", "Python.", sep="-")
+\end{minted}
+
+
+Output is:
+{\fontfamily{cmtt}\selectfont MynameisMontyPython.}
+\newline
+
+
+
+
+Both keyword arguments \textbf{may be mixed in one invocation}, just like here in the editor window.
+\newline
+
+The example doesn't make much sense, but it visibly presents the interactions between {\fontfamily{cmtt}\selectfont end} and {\fontfamily{cmtt}\selectfont sep}.
+
+\begin{minted}{python}
+ print("My", "name", "is", sep="_", end="*")
+ print("Monty", "Python.", sep="*", end="*\n")
+\end{minted}
+
+
+What would the output be?
+\newline
+
+{\fontfamily{cmtt}\selectfont My\underline{\hspace{.10in}}name\underline{\hspace{.10in}}is*Monty*Python*}
+\newline
+
+Now that you understand the {\fontfamily{cmtt}\selectfont print()} function, you're ready to consider how to store and process data in Python.
+\newline
+
+Without {\fontfamily{cmtt}\selectfont print()}, you wouldn't be able to see any results.
+
+\subsection{LAB - The print() Function}
+\subsubsection{Objectives}
+\begin{itemize}
+ \item becoming familiar with the {\fontfamily{cmtt}\selectfont print()} function and its formatting capabilities;
+ \item experimenting with Python code.
+\end{itemize}
+
+
+\subsubsection{Scenario}
+Modify the first line of code, using the {\fontfamily{cmtt}\selectfont sep} and {\fontfamily{cmtt}\selectfont end} keywords, to match the expected output. Use the two {\fontfamily{cmtt}\selectfont print()} functions in the editor.
+\newline
+
+Don't change anything in the second {\fontfamily{cmtt}\selectfont print()} invocation.
+\newline
+
+\subsubsection{Provided Code}
+\begin{minted}{python}
+ print("Programming","Essentials","in")
+ print("Python")
+\end{minted}
+
+
+\subsubsection{Expected Code}
+{\fontfamily{cmtt}\selectfont Programming***Essentials***in...Python}
+\newline
+
+\subsubsection{Modified Code}
+\begin{minted}{python}
+ print("Programming","Essentials","in",sep="***",end="...")
+ print("Python")
+\end{minted}
+
+\subsection{LAB: Formatting the Output}
+\subsubsection{Objectives}
+\begin{itemize}
+ \item experimenting with existing Python code;
+ \item discovering and fixing basic syntax errors;
+ \item becoming familiar with the {\fontfamily{cmtt}\selectfont print()} function and its formatting capabilities.
+\end{itemize}
+
+\subsubsection{Scenario}
+We strongly encourage you to \textbf{play with the code} we've written for you, and make some (maybe even destructive) amendments. Feel free to modify any part of the code, but there is one condition - learn from your mistakes and draw your own conclusions.
+\newline
+
+Try to:
+\begin{itemize}
+ \item minimize the number of {\fontfamily{cmtt}\selectfont print()} function invocations by inserting the {\fontfamily{cmtt}\selectfont\textbackslash n} sequence into the strings
+ \item make the arrow twice as large (but keep the proportions)
+ \item duplicate the arrow, placing both arrows side by side; note: a string may be multiplied by using the following trick: {\fontfamily{cmtt}\selectfont "string" * 2} will produce {\fontfamily{cmtt}\selectfont "stringstring"} (we'll tell you more about it soon)
+ \item remove any of the quotes, and look carefully at Python's response; pay attention to where Python sees an error - is this the place where the error really exists?
+ \item do the same with some of the parentheses;
+ \item change any of the {\fontfamily{cmtt}\selectfont print} words into something else, differing only in case (e.g., {\fontfamily{cmtt}\selectfont Print}) - what happens now?
+ \item replace some of the quotes with apostrophes; watch what happens carefully.
+\end{itemize}
+
+\subsubsection{Provided Code}
+\begin{minted}{python}
+ print("    *")
+ print("   * *")
+ print("  *   *")
+ print(" *     *")
+ print("***   ***")
+ print("  *   *")
+ print("  *   *")
+ print("  *****")
+\end{minted}
+
+\subsubsection{Modified Code}
+\textbf{Challenge 1}
+Minimize the number of {\fontfamily{cmtt}\selectfont print()} function invocations by inserting the {\fontfamily{cmtt}\selectfont\textbackslash n} sequence into the strings.
+\newline
+
+\begin{minted}{python}
+ print("    *","   * *","  *   *","***   ***","  *   *","  *   *","  *****",sep="\n")
+\end{minted}
+
+\textbf{Challenge 2}
+Duplicate the arrow, placing both arrows side by side; note: a string may be multiplied by using the following trick: {\fontfamily{cmtt}\selectfont "string" * 2} will produce {\fontfamily{cmtt}\selectfont "stringstring"}.
+\newline
+
+\begin{minted}{python}
+ print("    *" *2)
+ print("   * *" *2)
+ print("  *   *" *2)
+ print(" *     *" *2)
+ print("***   ***" *2)
+ print("  *   *" *2)
+ print("  *   *" *2)
+ print("  *****" *2)
+\end{minted}
+
+\subsection{Section Summary - Key Takeaways}
+\begin{enumerate}
+ \item The {\fontfamily{cmtt}\selectfont print()} function is a \textbf{built-in} function. It prints/outputs a specified message to the screen/consol window.
+ \item Built-in functions, contrary to user-defined functions, are always available and don't have to be imported. Python 3.8 comes with 69 built-in functions. You can find their full list provided in alphabetical order in the Python Standard Library.
+ \item To call a function (this process is known as \textbf{function invocation} or \textbf{function call}), you need to use the function name followed by parentheses. You can pass arguments into a function by placing them inside the parentheses. You must separate arguments with a comma, e.g., {\fontfamily{cmtt}\selectfont print("Hello,", "world!")}. An "empty" {\fontfamily{cmtt}\selectfont print()} function outputs an empty line to the screen.
+ \item Python strings are delimited with \textbf{quotes}, e.g., {\fontfamily{cmtt}\selectfont "I am a string"} (double quotes), or {\fontfamily{cmtt}\selectfont 'I am a string, too'} (single quotes).
+ \item Computer programs are collections of \textbf{instructions}. An instruction is a command to perform a specific task when executed, e.g., to print a certain message to the screen.
+  \item In Python strings the \textbf{backslash} (\textbackslash) is a special character which announces that the next character has a different meaning, e.g., \textbackslash n (the \textbf{newline character}) starts a new output line.
+ \item \textbf{Positional arguments} are the ones whose meaning is dictated by their position, e.g., the second argument is outputted after the first, the third is outputted after the second, etc.
+ \item \textbf{Keyword arguments} are the ones whose meaning is not dictated by their location, but by a special word (keyword) used to identify them.
+ \item The {\fontfamily{cmtt}\selectfont end} and {\fontfamily{cmtt}\selectfont sep} parameters can be used for formatting the output of the {\fontfamily{cmtt}\selectfont print()} function. The sep parameter specifies the separator between the outputted arguments (e.g., {\fontfamily{cmtt}\selectfont print("H", "E", "L", "L", "O", sep="-")}, whereas the {\fontfamily{cmtt}\selectfont end} parameter specifies what to print at the end of the print statement.
+\end{enumerate}
+
+
+
+
+%Module 2, Section 2 - Python Literals
+\section{Python Literals}
+\subsection{Literals - the Data in Itself}
+Now that you have a little knowledge of some of the powerful features offered by the {\fontfamily{cmtt}\selectfont print()} unction, it's time to learn about some new issues, and one important new term - the \textbf{literal}.
+
+
+
+
+
+
 
 
 
