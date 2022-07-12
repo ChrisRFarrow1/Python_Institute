@@ -6,6 +6,8 @@
 \usepackage{csquotes}
 % The tgbonum Package is for different font types
 \usepackage{tgbonum}
+% Package to allow for underscores
+\usepackage[T1]{fontenc}
 
 %Opening Section
 \title{Python Essentials - Module 2}
@@ -168,7 +170,7 @@ We'll discuss this in more depth soon, but we should just shed a little light on
 What happens when Python encounters an invocation like this one below?
 \newline
 
-{\fontfamily{cmtt}\selectfont function\underline{\hspace{.10in}}name(argument)}
+{\fontfamily{cmtt}\selectfont function\_name(argument)}
 \newline
 
 Let's see:
@@ -529,7 +531,7 @@ The example doesn't make much sense, but it visibly presents the interactions be
 What would the output be?
 \newline
 
-{\fontfamily{cmtt}\selectfont My\underline{\hspace{.10in}}name\underline{\hspace{.10in}}is*Monty*Python*}
+{\fontfamily{cmtt}\selectfont My\_name\_is*Monty*Python*}
 \newline
 
 Now that you understand the {\fontfamily{cmtt}\selectfont print()} function, you're ready to consider how to store and process data in Python.
@@ -648,6 +650,110 @@ Duplicate the arrow, placing both arrows side by side; note: a string may be mul
 \section{Python Literals}
 \subsection{Literals - the Data in Itself}
 Now that you have a little knowledge of some of the powerful features offered by the {\fontfamily{cmtt}\selectfont print()} unction, it's time to learn about some new issues, and one important new term - the \textbf{literal}.
+\newline
+
+\textbf{A literal is data whose values are determined by the literal itself.}
+\newline
+
+As this is a difficult concept to understand, a good example may be helpful. Take a look at the following set of digits:\newline
+{\fontfamily{cmtt}\selectfont 123}
+\newline
+
+Can you guess what value it represents? Of course you can - it's one hundred twenty three. But what about this:\newline
+{\fontfamily{cmtt}\selectfont c}
+\newline
+
+Does {\fontfamily{cmtt}\selectfont c} represent any value? Maybe. It can be the symbol of the speed of light, for example. It also can be the constant of integration. Or even the length of a hypotenuse in the sense of a Pythagorean theorem. There are many possibilities. You cannot choose the right one without some additional knowledge.
+\newline
+
+And this is the clue: {\fontfamily{cmtt}\selectfont 123} is a literal, and {\fontfamily{cmtt}\selectfont c} is not.
+\newline
+
+You use literals to \textbf{encode data and to put them into your code}. We're now going to show you some conventions you have to obey when using Python.
+\newline
+
+Let's start with a simple experiment:
+\begin{minted}{python}
+ print("2")
+ print(2)
+\end{minted}
+
+
+The first line looks familiar. The second seems to be erroneous due to the visible lack of quotes. Try to run it. If everything went okay, you should now see two identical lines. What happened? What does it mean? Through this example, you encounter two different types of literals:
+\begin{itemize}
+ \item a \textbf{string}, which you already know
+ \item an \textbf{integer} number, something completely new
+\end{itemize}
+
+
+The {\fontfamily{cmtt}\selectfont print()} function presents them in exactly the same way - this example is obvious, as their human-readable representation is also the same. Internally, in the computer's memory, these two values are stored in completely different ways - the string exists as just a string - a series of letters. The number is converted into machine representation (a set of bits). The {\fontfamily{cmtt}\selectfont print()} function is able to show them both in a form readable to humans.
+\newline
+
+\subsection{Integers}
+You may already know a little about how computers perform calculations on numbers. Perhaps you've heard of the \textbf{binary system}, and know that it's the system computers use for storing numbers, and that they can perform any operation upon them. We won't explore the intricacies of positional numeral systems here, but we'll say that the numbers handled by modern computers are of two types:
+\begin{itemize}
+ \item \textbf{integers}, that is, those which are devoid of the fractional part;
+ \item and \textbf{floating-point} numbers (or simply \textbf{floats}), that contain (or are able to contain) the fractional part.
+\end{itemize}
+
+This definition is not entirely accurate, but quite sufficient for now. The distinction is very important, and the boundary between these two types of numbers is very strict. Both of these kinds of numbers differ significantly in how they're stored in a computer memory and in the range of acceptable values. The characteristic of the numeric value which determines its kind, range, and application, is called the \textbf{type}.
+\newline
+
+If you encode a literal and place it inside Python code, the form of the literal determines the representation (\textbf{type}) Python will use to \textbf{store it in the memory}. For now, let's leave the floating-point numbers aside (we'll come back to them soon) and consider the question of how Python recognizes integers.
+\newline
+
+The process is almost like how you would write them with a pencil on paper - it's simply a string of digits that make up the number. But there's a reservation - you must not interject any characters that are not digits inside the number. Take, for example, the number eleven million one hundred and eleven thousand one hundred and eleven. If you took a pencil in your hand right now, you would write the number like this:{\fontfamily{cmtt}\selectfont 11,111,111}, or like this: {\fontfamily{cmtt}\selectfont 11.111.111}, or even like this: {\fontfamily{cmtt}\selectfont 11 111 111}.
+\newline
+
+It's clear that this provision makes it easier to read, especially when the number consists of many digits. However, Python doesn't accept things like these. It's \textbf{prohibited}. What Python does allow, though, is the use of \textbf{underscores} in numeric literals.\footnote{Python 3.6 has introduced underscores in numeric literals, allowing for placing single underscores between digits and after base specifiers for improved readability. This feature is not available in older versions of Python.} Therefore, you can write this number either like this: {\fontfamily{cmtt}\selectfont 11111111} or like that: {\fontfamily{cmtt}\selectfont 11\_111\_111}.
+\newline
+
+And how do we code negative numbers in Python? As usual - by adding a minus. You can write: {\fontfamily{cmtt}\selectfont -11111111} or {\fontfamily{cmtt}\selectfont -11\_111\_111}. Positive numbers do not need to be preceded by the plus sign, but it's permissible, if you wish to do it. The following lines describe the same number: {\fontfamily{cmtt}\selectfont +11111111} or {\fontfamily{cmtt}\selectfont 11111111}.
+\newline
+
+\subsubsection{Integers: Octal and Hexadecimal Numbers}
+There are two additional conventions in Python that are unknown to the world of mathematics. The first allows us to use numbers in an \textbf{octal} representation. If an integer number is preceded by an {\fontfamily{cmtt}\selectfont 0O} or {\fontfamily{cmtt}\selectfont 0o} prefix (zero-o), it will be treated as an octal value. This means that the number must contain digits taken from the [0..7] range only.
+\newline
+
+{\fontfamily{cmtt}\selectfont 0o123} is an \textbf{octal} number with a (decimal) value equal to {\fontfamily{cmtt}\selectfont 83}. The {\fontfamily{cmtt}\selectfont print()} function does the conversion automatically. Try this:
+\begin{minted}{python}
+ print(0o123)
+\end{minted}
+
+Output is: {\fontfamily{cmtt}\selectfont 83}.
+\newline
+
+The second convention allows us to use \textbf{hexadecimal} numbers. Such numbers should be preceded by the prefix {\fontfamily{cmtt}\selectfont Ox} or {\fontfamily{cmtt}\selectfont OX} (zero-x). {\fontfamily{cmtt}\selectfont Ox123} is a \textbf{hexadecimal} number with a (decimal) value equal to {\fontfamily{cmtt}\selectfont 291}. The {\fontfamily{cmtt}\selectfont print()} function can manage these values too. Try this:
+\begin{minted}{python}
+ print(0x123)
+\end{minted}
+
+Output is: {\fontfamily{cmtt}\selectfont 291}.
+
+\subsection{Floats}
+Now it's time to talk about another type, which is designed to represent and to store the numbers that (as a mathematician would say) have a \textbf{non-empty decimal fraction}. They are the numbers that have (or may have) a fractional part after the decimal point, and although such a definition is very poor, it's certainly sufficient for what we wish to discuss. Whenever we use a term like \textit{two and a half or minus zero point four}, we think of numbers which the computer considers \textbf{floating-point} numbers:
+\newline
+
+{\fontfamily{cmtt}\selectfont 2.5}
+
+
+{\fontfamily{cmtt}\selectfont -0.4}
+
+
+Note: \textit{two and a half} looks normal when you write it in a program, although if your native language prefers to use a comma instead of a point in the number, you should ensure that your \textbf{number doesn't contain any commas} at all.
+\newline
+
+Python will not accept that, or (in very rare but possible cases) may misunderstand your intentions, as the comma itself has its own reserved meaning in Python. If you want to use just a value of two and a half, you should write it as shown above. Note once again - there is a point between \textit{2} and \textit{5} - not a comma.
+\newline
+
+As you can probably imagine, the value of zero point four could be written in Python as {\fontfamily{cmtt}\selectfont 0.4}. But don't forget this simple rule - you can omit zero when it is the only digit in front of or after the decimal point. In essence, you can write the value {\fontfamily{cmtt}\selectfont 0.4} as {\fontfamily{cmtt}\selectfont .4} in Python. For example: the value of {\fontfamily{cmtt}\selectfont 4.0} could be written as {\fontfamily{cmtt}\selectfont 4}. This will change neither its type nor its value.
+\newline
+
+\subsection{Ints vs. Floats}
+%Section 2.2.1.6
+
+
+
 
 
 

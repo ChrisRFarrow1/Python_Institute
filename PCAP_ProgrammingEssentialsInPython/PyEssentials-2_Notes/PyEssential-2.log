@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2022.7.9)  10 JUL 2022 18:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2022.7.9)  12 JUL 2022 08:35
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -214,6 +214,17 @@ File: csquotes.cfg
 (/usr/share/texlive/texmf-dist/tex/latex/tex-gyre/tgbonum.sty
 Package: tgbonum 2009/09/27 v1.2 TeX Gyre Bonum as default roman family
 )
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+qbk on input line 11
+2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/tex-gyre/t1qbk.fd
+File: t1qbk.fd 2009/09/25 v1.2 font definition file for T1/qbk
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
@@ -250,26 +261,21 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 (./PyEssential-2.aux)
 \openout1 = `PyEssential-2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Trying to load font information for OT1+qbk on input line 1
-5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
-(/usr/share/texlive/texmf-dist/tex/latex/tex-gyre/ot1qbk.fd
-File: ot1qbk.fd 2009/09/25 v1.2 font definition file for OT1/qbk
-)
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count279
@@ -285,11 +291,11 @@ File: ot1qbk.fd 2009/09/25 v1.2 font definition file for OT1/qbk
 \everyMPtoPDFconversion=\toks24
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 16.
+(Font)              <12> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 16.
+(Font)              <8> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 16.
+(Font)              <6> on input line 18.
  (./PyEssential-2.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
@@ -300,34 +306,34 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout5 = `PyEssential-2.toc'.
 
 LaTeX Font Info:    Trying to load font information for TS1+qbk on input line 2
-4.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/tex-gyre/ts1qbk.fd
 File: ts1qbk.fd 2009/09/25 v1.2 font definition file for TS1/qbk
 )
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
 [1
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--45
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--48
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
  []
 
@@ -336,7 +342,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--48
 (./_minted-PyEssential-2/default-pyg-prefix.pygstyle)
 (./_minted-PyEssential-2/default.pygstyle)
 (./_minted-PyEssential-2/B417B411A5BA8B6B7119DB4CEF640260361BEC3D346BCAC2399FF2
-3C53B86A0E.pygtex)
+3C53B86A0E.pygtex
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+))
 \openout3 = `PyEssential-2.pyg'.
 
 
@@ -352,77 +363,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--48
 
 (./_minted-PyEssential-2/5F3B85679E246877AFE12DCB82B728D0361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--81
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--115
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--124
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--127
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--139
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
@@ -431,32 +442,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
 (./_minted-PyEssential-2/C30A3F7E102B9CDF32D06FD0E9800373361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 145--147
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--150
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--153
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--156
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
 
  []
 
@@ -465,121 +476,121 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
 (./_minted-PyEssential-2/C30A3F7E102B9CDF32D06FD0E9800373361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
 
-LaTeX Font Warning: Font shape `OT1/cmtt/b/n' undefined
-(Font)              using `OT1/cmtt/m/n' instead on input line 186.
+LaTeX Font Warning: Font shape `T1/cmtt/b/n' undefined
+(Font)              using `T1/cmtt/m/n' instead on input line 188.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--198
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--201
+Underfull \hbox (badness 10000) in paragraph at lines 198--200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 202--204
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--207
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--216
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--222
+Underfull \hbox (badness 10000) in paragraph at lines 222--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--225
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--228
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--231
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--236
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 244--246
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--249
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--252
+Underfull \hbox (badness 10000) in paragraph at lines 252--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--255
+Underfull \hbox (badness 10000) in paragraph at lines 255--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
+Underfull \hbox (badness 10000) in paragraph at lines 261--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--264
+Underfull \hbox (badness 10000) in paragraph at lines 264--266
 
  []
 
@@ -588,109 +599,101 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--264
 
 (./_minted-PyEssential-2/3304F64761F3AAEC9940FBFFEA187C78361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
 )
-LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
-275.
- (/usr/share/texmf/tex/latex/R/omscmtt.fd
-File: omscmtt.fd 
-)
-LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 275.
-
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--280
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
 
  []
 
 
-Overfull \hbox (3.52962pt too wide) in paragraph at lines 281--283
-[]\OT1/qbk/m/n/10 The back-slash (\OMS/cmsy/m/n/10 n\OT1/qbk/m/n/10 ) has a ver
-y spe-cial mean-ing when used in-side strings
+Overfull \hbox (3.77832pt too wide) in paragraph at lines 283--285
+[]\T1/qbk/m/n/10 The back-slash (\T1/cmtt/m/n/10 \\T1/qbk/m/n/10 ) has a very s
+pe-cial mean-ing when used in-side strings
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--283
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 284--286
+Underfull \hbox (badness 10000) in paragraph at lines 283--285
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--289
+Underfull \hbox (badness 10000) in paragraph at lines 286--288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--292
+Underfull \hbox (badness 10000) in paragraph at lines 289--291
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--294
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--298
+Underfull \hbox (badness 10000) in paragraph at lines 298--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--303
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--311
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--314
+Underfull \hbox (badness 10000) in paragraph at lines 314--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--317
+Underfull \hbox (badness 10000) in paragraph at lines 317--319
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--320
+Underfull \hbox (badness 10000) in paragraph at lines 320--322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--323
+Underfull \hbox (badness 10000) in paragraph at lines 323--325
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--326
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
+Underfull \hbox (badness 10000) in paragraph at lines 330--332
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--333
+Underfull \hbox (badness 10000) in paragraph at lines 333--335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--337
+Underfull \hbox (badness 10000) in paragraph at lines 337--339
 
  []
 
@@ -699,42 +702,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--337
 
 (./_minted-PyEssential-2/8346D1FADA756C601DB4E1302B7C5DD1361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 344--346
+Underfull \hbox (badness 10000) in paragraph at lines 346--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--349
+Underfull \hbox (badness 10000) in paragraph at lines 349--351
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 350--352
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--355
+Underfull \hbox (badness 10000) in paragraph at lines 355--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--358
+Underfull \hbox (badness 10000) in paragraph at lines 358--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--364
+Underfull \hbox (badness 10000) in paragraph at lines 364--366
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--367
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--377
+Underfull \hbox (badness 10000) in paragraph at lines 377--379
 
  []
 
@@ -743,48 +746,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 375--377
 
 (./_minted-PyEssential-2/EE2CA0ACF9CCBBF38A8CBED8A59425EF361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 387--389
+Underfull \hbox (badness 10000) in paragraph at lines 389--391
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--396
+Underfull \hbox (badness 10000) in paragraph at lines 396--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--401
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
 
-Overfull \hbox (0.10938pt too wide) in paragraph at lines 403--405
-\OT1/qbk/m/n/10 can be help-ful when you want to con-vince the \OT1/cmtt/m/n/10
- print() \OT1/qbk/m/n/10 func-tion to change
+Overfull \hbox (0.10072pt too wide) in paragraph at lines 405--407
+\T1/qbk/m/n/10 can be help-ful when you want to con-vince the \T1/cmtt/m/n/10 p
+rint() \T1/qbk/m/n/10 func-tion to change
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--405
+Underfull \hbox (badness 10000) in paragraph at lines 405--407
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 406--408
+Underfull \hbox (badness 10000) in paragraph at lines 408--410
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--411
+Underfull \hbox (badness 10000) in paragraph at lines 411--413
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--414
+Underfull \hbox (badness 10000) in paragraph at lines 414--416
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--417
+Underfull \hbox (badness 10000) in paragraph at lines 417--419
 
  []
 
@@ -793,32 +796,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 415--417
 
 (./_minted-PyEssential-2/722A9BFB9E907E9B4D486AD38DF64A93361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 431--433
+Underfull \hbox (badness 10000) in paragraph at lines 433--435
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 434--436
+Underfull \hbox (badness 10000) in paragraph at lines 436--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--439
+Underfull \hbox (badness 10000) in paragraph at lines 439--441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--442
+Underfull \hbox (badness 10000) in paragraph at lines 442--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--445
+Underfull \hbox (badness 10000) in paragraph at lines 445--447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 446--448
+Underfull \hbox (badness 10000) in paragraph at lines 448--450
 
  []
 
@@ -827,66 +830,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 446--448
 
 (./_minted-PyEssential-2/6F14C4BD29F77D2F979974415E738046361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex [10])
-Underfull \hbox (badness 10000) in paragraph at lines 458--460
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 461--463
+Underfull \hbox (badness 10000) in paragraph at lines 463--465
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--466
+Underfull \hbox (badness 10000) in paragraph at lines 466--468
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--469
+Underfull \hbox (badness 10000) in paragraph at lines 469--471
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--472
+Underfull \hbox (badness 10000) in paragraph at lines 472--474
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 473--475
+Underfull \hbox (badness 10000) in paragraph at lines 475--477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--478
+Underfull \hbox (badness 10000) in paragraph at lines 478--480
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--483
-
- []
-
-\openout3 = `PyEssential-2.pyg'.
-
-
-(./_minted-PyEssential-2/BC2D80C99146C597D5BCB97AD06CC8A9361BEC3D346BCAC2399FF2
-3C53B86A0E.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 492--494
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 495--497
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 498--500
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 501--503
+Underfull \hbox (badness 10000) in paragraph at lines 483--485
 
  []
 
@@ -895,12 +874,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 501--503
 
 (./_minted-PyEssential-2/BC2D80C99146C597D5BCB97AD06CC8A9361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 511--514
+Underfull \hbox (badness 10000) in paragraph at lines 494--496
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--520
+Underfull \hbox (badness 10000) in paragraph at lines 497--499
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--502
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--505
+
+ []
+
+\openout3 = `PyEssential-2.pyg'.
+
+
+(./_minted-PyEssential-2/BC2D80C99146C597D5BCB97AD06CC8A9361BEC3D346BCAC2399FF2
+3C53B86A0E.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 513--516
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--522
 
  []
 
@@ -910,27 +913,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 518--520
 
 (./_minted-PyEssential-2/06FC0028D5AC5416175598986DEFDBCA361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 529--531
+Underfull \hbox (badness 10000) in paragraph at lines 531--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 532--534
+Underfull \hbox (badness 10000) in paragraph at lines 534--536
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--537
+Underfull \hbox (badness 10000) in paragraph at lines 537--539
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 549--551
+Underfull \hbox (badness 10000) in paragraph at lines 551--553
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--554
+Underfull \hbox (badness 10000) in paragraph at lines 554--556
 
  []
 
@@ -939,7 +942,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 552--554
 
 (./_minted-PyEssential-2/A3A0D332DE1B3DF99878341EED79C74D361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 563--565
+Underfull \hbox (badness 10000) in paragraph at lines 565--567
 
  []
 
@@ -948,7 +951,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 563--565
 
 (./_minted-PyEssential-2/4AEF0893D5601F7E9899C82BE635A339361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex) [12]
-Underfull \hbox (badness 10000) in paragraph at lines 581--583
+Underfull \hbox (badness 10000) in paragraph at lines 583--585
 
  []
 
@@ -957,7 +960,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 581--583
 
 (./_minted-PyEssential-2/7E6F8A9415A528A24B2DD56B8371F3F0361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 608--611
+Underfull \hbox (badness 10000) in paragraph at lines 610--613
 
  []
 
@@ -967,7 +970,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 608--611
 
 (./_minted-PyEssential-2/E33DB6C32326C8AAED4D5E1E706C3A05361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 616--619
+Underfull \hbox (badness 10000) in paragraph at lines 618--621
 
  []
 
@@ -975,17 +978,120 @@ Underfull \hbox (badness 10000) in paragraph at lines 616--619
 
 
 (./_minted-PyEssential-2/EF9ABF147861EE356A4E97F5B3DFF8DA361BEC3D346BCAC2399FF2
+3C53B86A0E.pygtex) [14]
+Underfull \hbox (badness 10000) in paragraph at lines 652--654
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--657
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--661
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 662--665
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--668
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 669--671
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--674
+
+ []
+
+\openout3 = `PyEssential-2.pyg'.
+
+
+(./_minted-PyEssential-2/6864997874ADA1E35BB5F0279D9E75CC361BEC3D346BCAC2399FF2
+3C53B86A0E.pygtex) [15]
+Underfull \hbox (badness 10000) in paragraph at lines 689--691
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--701
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 702--704
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 705--707
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 708--710
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 711--713
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 715--717
+
+ []
+
+\openout3 = `PyEssential-2.pyg'.
+
+
+(./_minted-PyEssential-2/09C8258992F900881B47A389167171B1361BEC3D346BCAC2399FF2
 3C53B86A0E.pygtex)
-LaTeX Font Info:    Trying to load font information for OMS+qbk on input line 6
-38.
-LaTeX Font Info:    No file OMSqbk.fd. on input line 638.
+Underfull \hbox (badness 10000) in paragraph at lines 723--725
+
+ []
+
+\openout3 = `PyEssential-2.pyg'.
 
 
-LaTeX Font Warning: Font shape `OMS/qbk/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 638.
+(./_minted-PyEssential-2/66C5B097971A5B7F1AFF300DCE21F9BA361BEC3D346BCAC2399FF2
+3C53B86A0E.pygtex
+Overfull \hbox (2.05298pt too wide) in paragraph at lines 726--1
+[]\T1/qbk/m/n/10 The sec-ond con-ven-tion al-lows us to use \T1/qbk/b/n/10 hex-
+adec-i-mal \T1/qbk/m/n/10 num-bers. Such
+ []
 
-[14] [15] (./PyEssential-2.aux)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 734--736
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 743--745
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 746--748
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 749--751
+
+ []
+
+[18] (./PyEssential-2.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -993,24 +1099,24 @@ runsystem(rm PyEssential-2.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 5812 strings out of 482555
- 109018 string characters out of 5952146
- 395917 words of memory out of 6000000
- 21317 multiletter control sequences out of 15000+600000
- 566950 words of font info for 46 fonts, out of 8000000 for 9000
+ 6044 strings out of 482555
+ 112224 string characters out of 5952146
+ 397307 words of memory out of 6000000
+ 21537 multiletter control sequences out of 15000+600000
+ 576770 words of font info for 49 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,8n,37p,849b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}{/usr/share/
-texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}</usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/tex-gyre/qbkb.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/tex-gyre/qbkr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tex-gyre/
-qbkri.pfb>
-Output written on PyEssential-2.pdf (15 pages, 136914 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/
+texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive
+/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}</usr/share/texlive/texmf-dist/f
+onts/type1/public/tex-gyre/qbkb.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/tex-gyre/qbkr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tex-
+gyre/qbkri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sftt1
+000.pfb>
+Output written on PyEssential-2.pdf (18 pages, 158263 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

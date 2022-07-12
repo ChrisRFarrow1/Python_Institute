@@ -21,3 +21,7 @@
 \contentsline {subsection}{\numberline {1.6}Section Summary - Key Takeaways}{14}%
 \contentsline {section}{\numberline {2}Python Literals}{15}%
 \contentsline {subsection}{\numberline {2.1}Literals - the Data in Itself}{15}%
+\contentsline {subsection}{\numberline {2.2}Integers}{16}%
+\contentsline {subsubsection}{\numberline {2.2.1}Integers: Octal and Hexadecimal Numbers}{17}%
+\contentsline {subsection}{\numberline {2.3}Floats}{17}%
+\contentsline {subsection}{\numberline {2.4}Ints vs. Floats}{18}%
